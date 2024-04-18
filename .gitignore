@@ -1,0 +1,11 @@
+*.env
+*.bak
+*.log
+__pycache__/
+*.pyc
+*.tmp.*
+.tmp.driveupload/
+*.csv
+*.png
+*.jpg
+*.jpeg
