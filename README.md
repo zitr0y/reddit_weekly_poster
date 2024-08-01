@@ -25,13 +25,13 @@ pip install -r requirements.txt
 
 3. Create a `.env` file in the project root with the following variables:
 
-CLIENT_ID=your_reddit_client_id
-CLIENT_SECRET=your_reddit_client_secret
-REFRESH_TOKEN=your_reddit_refresh_token
-USER_AGENT=your_user_agent
-SUBREDDIT=your_subreddit
-FLAIRID=your_flair_id
-WEBHOOK_URL=your_discord_webhook_url
+> CLIENT_ID=your_reddit_client_id  
+> CLIENT_SECRET=your_reddit_client_secret  
+> REFRESH_TOKEN=your_reddit_refresh_token  
+> USER_AGENT=your_user_agent  
+> SUBREDDIT=your_subreddit  
+> FLAIRID=your_flair_id  
+> WEBHOOK_URL=your_discord_webhook_url  
 
 Replace the placeholder values with your actual Reddit API credentials, data and Discord webhook URL.
 
