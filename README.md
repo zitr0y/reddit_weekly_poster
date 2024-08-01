@@ -1,4 +1,4 @@
-# GermanRap Subreddit Bot
+# GermanRap Weekly Posts Bot
 
 ## Description
 This bot automates the creation of weekly discussion threads for the r/GermanRap subreddit. It posts different types of threads on a rotating schedule, including international releases, music recommendations, collaboration opportunities, and subreddit feedback. It can be quite easily adapted to other subreddits and topics by changing the .env and the texts in "all_post_texts.py".
