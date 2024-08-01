@@ -2,7 +2,7 @@ import logging
 import os
 import connect_to_reddit
 import csv_handler
-import alle_post_texte
+import all_post_texts
 
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='posterscript.log')
@@ -45,7 +45,7 @@ def prepare_post_content(post_name):
     """Prepare the title and text for the post."""
     with_link = csv_handler.output_csv_entry(post_name)
     logging.info(f'Preparing text with parameters: with_link: {with_link}')
-    return alle_post_texte.get_post_text(post_name, with_link)
+    return all_post_texts.get_post_text(post_name, with_link)
 
 def submit_post(reddit, subreddit, title, text, flairID):
     """Submit the post to Reddit."""

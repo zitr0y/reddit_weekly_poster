@@ -3,7 +3,7 @@ import sys
 import logging
 import datetime
 from dotenv import load_dotenv
-import Weekly_und_Collabo_Bot_Germanrap
+import posting_scripts
 import requests
 
 # Set up logging
@@ -44,7 +44,7 @@ def post_weekly_thread(subreddit, flairID, webhook_url):
     """Post the weekly thread and handle any errors."""
     try:
         current_week = week_of_month(datetime.date.today())
-        Weekly_und_Collabo_Bot_Germanrap.friss_post(current_week, subreddit, flairID)
+        posting_scripts.friss_post(current_week, subreddit, flairID)
         logging.info(f'Successfully posted weekly thread for week {current_week}')
     except Exception as e:
         error_message = f"Error posting weekly thread: {str(e)}"
@@ -56,7 +56,7 @@ def post_weekly_thread(subreddit, flairID, webhook_url):
 def main():
     """Main function to run the script."""
     subreddit, flairID, webhook_url = load_environment_variables()
-    #post_weekly_thread(subreddit, flairID, webhook_url)
+    post_weekly_thread(subreddit, flairID, webhook_url)
 
 if __name__ == "__main__":
     main()
@@ -68,9 +68,8 @@ if __name__ == "__main__":
 
 
 # For testing purposes
-
-#Weekly_und_Collabo_Bot_Germanrap.friss_post(1, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
-#Weekly_und_Collabo_Bot_Germanrap.friss_post(2, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
-#Weekly_und_Collabo_Bot_Germanrap.friss_post(3, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
-#Weekly_und_Collabo_Bot_Germanrap.friss_post(4, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
-#Weekly_und_Collabo_Bot_Germanrap.friss_post(5, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
+#posting_scripts.friss_post(1, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
+#posting_scripts.friss_post(2, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
+#posting_scripts.friss_post(3, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
+#posting_scripts.friss_post(4, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
+#posting_scripts.friss_post(5, subreddit = "germanraptest", flairID="0dc4ec00-0d69-11ec-99e6-f6bad6da933e")
