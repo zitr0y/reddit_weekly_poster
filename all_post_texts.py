@@ -37,9 +37,9 @@ Kooperation erwartest. Möchtest du z.B. einen Gastpart auf nem Raptrack, einen 
 **Egal was, pack es hier rein und hoffentlich findest du genau wonach du suchst.**
 """
 
-post4_title = "Reflektion-Thread: Was war gut die letzten ~4 Wochen?"
+post4_title = "Reflexions-Thread: Was war gut die letzten ~4 Wochen?"
 post4_text = """
-**Willkommen im monatlichen Reflektion-Thread!**
+**Willkommen im monatlichen Reflexions-Thread!**
 
 Release-Freitage sind aufgrund der schieren Masse an neuer Musik oft überwältigend.
 Klar, erste Eindrücke über Releases kann man teilen, aber viele Tracks und Alben altern 
